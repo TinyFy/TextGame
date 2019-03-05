@@ -21,7 +21,8 @@ public class TextController : MonoBehaviour {
         text.text = "Znajdujesz się przed wejściem do ekskluzywnej restauracji Ryneczek Lidla, \n" +
             " jesteś tam wraz z dziewczyną, którą poznałeś wczoraj na imprezie w pubie, \n" +
             "problem w tym, że zapomniałeś zarezerwować stolik... \n" +
-            "Naciśnij 1, aby zagadać do laski";
+            "Naciśnij 1, aby zagadać do laski\n" +
+            "1. Zagadaj";
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         { 
@@ -50,31 +51,31 @@ public class TextController : MonoBehaviour {
 
     private void state_agree()
     {
-        text.text = "Zgoda";
+        text.text = "zgoda text tutaj";
         if (Input.GetKeyDown(KeyCode.Alpha1)) { myState = States.state_agree; }
     }
 
     private void state_book()
     {
-        text.text = "cytat";
+        text.text = "cytat text tutaj";
         if (Input.GetKeyDown(KeyCode.A)) { myState = States.state_book; }
     }
 
     private void state_talkone()
     {
-        text.text = "zagadaj";
+        text.text = "zagadaj text tutaj";
         if (Input.GetKeyDown(KeyCode.Alpha1)) {myState = States.state_talkone; }
 
     }
 
     private void state_compliment()
     {
-        text.text = "komplement";
+        text.text = "komplement text tutaj";
         if (Input.GetKeyDown(KeyCode.Alpha1)) { myState = States.state_book; }
     }
     private void state_gate()
     {
-        text.text = "bramka";
+        text.text = "bramka text tutaj";
         if (Input.GetKeyDown(KeyCode.Alpha1)) { myState = States.state_gate; }
       
     }
