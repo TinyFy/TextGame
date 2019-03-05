@@ -50,7 +50,7 @@ public class TextController : MonoBehaviour {
 
     private void state_agree()
     {
-        text.text = "Zgoda"
+        text.text = "Zgoda";
         if (Input.GetKeyDown(KeyCode.Alpha1)) { myState = States.state_agree; }
     }
 
