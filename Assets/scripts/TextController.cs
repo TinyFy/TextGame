@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class TextController : MonoBehaviour {
     public Text text;
+    int ZMIANA;
     // Start is called before the first frame update
     States myState;
     private enum States { state_entry, state_talkone, state_compliment, state_book, state_weather,
